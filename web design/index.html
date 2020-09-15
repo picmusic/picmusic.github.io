@@ -10,112 +10,177 @@
     </head>
 
      <!--Custom Styling-->
-     <link href="style.css" rel="stylesheet" type="text/css">
+     <link href="styles.css" rel="stylesheet" type="text/css">
      <!--//Custom Styling-->
 
-    <!--Body-->
-    <body>
-    <header>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+     <script src="shelves.js"></script>
 
 
-      <div id="transparent-header">
-        <nav>
-          <div class="logo">
-            <a href="#"><img src="logo.png" alt="Raplatory inc. logo" class="logo"> 
-              <style>
-                .logo img {
-                
-                  border-radius: 50%;
-                }
-              </style>
-              <h1 class="logo-text">Raplatory</h1>
-            </a>  
-            </div>
-            <i class="fa fa-bars menu-toggle"></i>
-          <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Shop</a></li>
-            
-          </ul>
-          </nav>
-        </div>
+
+
+
+<header>
+   <div id="transparent-header">
+      <nav>
+          <i class="fa fa-bars menu-toggle"></i>
+          <div class="header">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="/" id="view-top-shelf"> Visual Media</a></li>
+              <li><a href="/" id="view-middle-shelf">Artists</a></li>
+              <li><a href="/" id="view-bottom-shelf">Socials</a></li>
+            </ul>
+          </div>
+        </ul>
+        </nav>
+      </div>
     </header>
+  
+  <div class="scene">
+    <!-- camera -->
+    <div class="roll-camera">
+      <div class="move-camera">
+        <div class="wallpaper"></div>
 
-        <div class= "Artist-section">
-          <h1> Artists </h1>
-          
-          <div class= "artist-img-section">
+
+  
 
 
-                <div class="img-artist" id="PIC">
-                  <a href="PIC.html">
-                  <img class="PIC"src="placeholder-person.png" alt="P.I.C" />
-                  <div class="overlay" ><img src="vinyl-purple.png" 
-                    style="max-width:35%;height:auto; border-radius: 100px;"/> </div>
-                  </a>
-        
-                  <div class= "PIC_text"
-                  h2>P.I.C.</h2> 
-                  </div>
-                </div>
-        
-                <div class=img-artist  id="docmoj">
-                  <a href="docmoj.html">
-                  <img class="docmoj"src="placeholder-person.png" alt="Doc Moj" />
-                  <div class="overlay" ><img src="vinyl-blue.png" style="max-width:35%;height:auto;"/> </div>
-                  </a>
-                  <div class= "Docmoj_text"
-                  h2>Doc Moj</h2> 
-                  </div>
-                </div>
-        
-                <div class=img-artist id="the-communist">
-                  <a href="The Communist.html">
-                  <img class="the-communist" src="placeholder-person.png" alt="The Communist"  />
-                  <div class="overlay" ><img src="vinyl-red.png"style="max-width:35%;height:auto;"/> </div>
-                  </a>
-                  <div class= "Communist_text"
-                  h2>The Communist</h2> 
-                  </div>
-                </div>
+
+          <!-- shelf -->
+          <div class="shelf top">
+            <div class="face top"></div>
+            <div class="face front">
+
+              <div class="photocard">
+
+                <img class="nail" id="visual-media" src="visual-media.png"  alt="">
+                
               </div>
+                
+              <a href="#"  class="photocard">
+                <div class=vismedia id=camera><img src="camera-icon.png" 
+                  style="max-width:100%;height:auto; border-radius: 100px;margin-left: 350px;"/> </div>
+              </a>
+              <a href="" class="photocard">
+                <div class="" id=""><img src="" 
+                  style="max-width:100%;height:auto; border-radius: 100px;"/> </div>
+              </a>
+              <a href="" class="photocard">
+                <div class="" id=""><img src="" 
+                  style="max-width:100%;height:auto; border-radius: 100px;"/> </div>
+              </a>
+
             </div>
-        </div>
-
-        
-<!--JQuery-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
-
-<!--Custom Script-->
-<script src="js/scripts.js"></script>
+            <div class="face back"></div>
+            <div class="face left"></div>
+            <div class="face bottom"></div>
+          </div>
+          <!-- /shelf -->
 
 
+          <!-- shelf -->
+          <div class="shelf middle">
+            <div class="face top"></div>
+            <div class="face front">
 
-<div class="shelf-icons">
-  <a class= "video-cam" href="video page">
-    <img src="Video-camera.png" alt="Videos" style="max-width:40%;height:auto;"/>
-    
+
+              <div class="photocard">
+
+                <img class="nail" id="artists" src="Artists.png" alt="">
+              </div>
+                
+              <a href="PIC.html"  class="photocard">
+                <div class="artist-image" id="PIC"><img src="vinyl-purple.png" 
+                  style="max-width:100%;height:auto; border-radius: 100px;"/> </div>
+              </a>
+              <a href="docmoj.html" class="photocard">
+                <div class="artist-image" id="docmoj"><img src="vinyl-blue.png" 
+                  style="max-width:100%;height:auto; border-radius: 100px;"/> </div>
+              </a>
+              <a href="The Communist.html" class="photocard">
+                <div class="artist-image" id="the-communist"><img src="vinyl-red.png" 
+                  style="max-width:100%;height:auto; border-radius: 100px;"/> </div>
+              </a>
+
+            </div>
+            <div class="face back"></div>
+            <div class="face left"></div>
+            <div class="face bottom"></div>
+          </div>
+          <!-- /shelf -->
+
+          <!-- shelf -->
+          <div class="shelf bottom">
+            <div class="face top"></div>
+            <div class="face front">
+
+              <div class="photocard">
+
+                <img class="nail" id="socials-text" src="Socials.png"  alt="">
+                
+              </div>
+              <a href="#"  class="photocard">
+                <div class="socials" id="youtube"><img src="youtube-icon.png" 
+                  style="max-width:100%;height:auto; border-radius: 100px;"/> </div>
+              </a>
+              <a href="#" class="photocard">
+                <div class="socials" id="twitter"><img src="twitter-icon.png" 
+                  style="max-width:100%;height:auto; border-radius: 100px;"/> </div>
+              </a>
 
 
+              <!-- /popup -->
+              <div class="photocard">
+                <div class="socials" id="instagram"><img src="instagram-icon.png" 
+                  style="max-width:100%;height:auto; border-radius: 400px;" onclick="openForm()"/> 
+                </div>
+              
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1 class="sm-head-text">IGs</h1>
+    <ul>
+    <li><a class="insta-links" href="https://www.instagram.com/partnersincrim3/">P.I.C</a></li>
+    <li><a class="insta-links" href="https://www.instagram.com/docmojj/">Doc Moj</a></li>
+    <li><a class="insta-links" href="https://www.instagram.com/dan.savel/">T.C</a></li>
+  </ul>
+    <i class="far fa-times-circle" id="cancel" onclick="closeForm()"></i>
+  </form>
 </div>
 
-</body>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
 
-  <!--footer-->
-  <div class= "footer">
-    <div class="footer-content">
-      <div class="footer-section.about"></div>
-      <div class="footer-section.links"></div>
-      <div class="footer-section contact-form"></div>
-    </div>
-    <div class= "footer-bottom">
-      &copy; Raplatory.com | Designed by Arman Mojtabavi
-    </div>
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+</div>
+
+
+            </div>
+            <div class="face back"></div>
+            <div class="face left"></div>
+            <div class="face bottom"></div>
+          </div>
+          <!-- /shelf -->
+        </div>
+        <!-- /camera -->
+      </div>
   </div>
-  <!--// footer -->
-
-  </html>
-
-
+    <!--footer-->
+    <div class= "footer">
+      <div class="footer-content">
+        <div class="footer-section.about"></div>
+        <div class="footer-section.links"></div>
+        <div class="footer-section contact-form"></div>
+      </div>
+      <div class= "footer-bottom">
+        &copy; Raplatory.com | Designed by Arman Mojtabavi
+      </div>
+    </div>
+    <!--// footer -->
