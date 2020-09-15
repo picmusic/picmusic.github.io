@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raplatory</title>
+    <link href="PIC.css" rel="stylesheet" type="text/css">
+   
+</head>
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
+    
+    <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+<header>
+    <div id="transparent-header" >
+	<nav>
+		<ul>
+			<li><a href="shelves.html">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Discography">Discography</a></li>
+            <li><a href="#Lyrics">Lyrics</a></li>
+		</ul>
+    </nav>
+    </div>
+</header>
+
+    
+
+
+    <div class="intro">
+        <div class= "page-title">
+        <h1>Partners in Crime (P.I.C)</h1>
+
+            <div class="image-container">
+                <img class="" src="PIC_ski_img.jpg" alt=""
+                style="max-width:40%;height:auto; border-radius: 100px;">
+
+            </div>
+        </div>
+    </div>
+
+<div class= "About-container" >
+
+<div class= "About-section" id="About">
+<h1>About</h1>
+<p>Partners in Crime or P.I.C is a Canadian Hip-hop duo consisting of Doc Moj and The Communist</p>
+
+</div>
+</div>
+
+    <div class= "Discography-container" >
+
+        <div class= "Discography-section" id="Discography" >
+            
+            <h1 style="text-align: center; padding: 30px;">Discography</h1>
+        
+
+            <div class= "Albums">
+               <div class="album-text"><h1 >Albums:</h1></div> 
+
+                <div id="content">
+                    <div class="title-container">
+        <span id="title1" class="hasBothTitles">From Moscow To Tehran</span>
+        <span id="title2">Partners In Crime</span>
+        <span class="title-underline"></span>
+                    </div>
+                </div>  
+
+        <div class="metadata metadata--mobile">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="FMTT Cover.jpg">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="grass placeholder.jpg">
+                        <div class="tracks">
+                            <ul
+                                id="track-list">
+                                <li><a href="#"> Train Station - Intro</a></li>
+                                <li><a href="#">P I C</a></li>
+                                <li><a href="#">Radio</a></li>
+                                <li><a href="#">Everyday</a></li>
+                                <li><a href="">E T I T O Y</a></li>
+                                <li><a href="#">Life & Death</a></li>
+                                <li><a href="#">From Moscow</a></li>
+                                <li><a href="#">Cabin Freestyle</a></li>
+                                <li><a href="#">To Tehran</a></li>
+                                <li><a href="#">Preach Then Purge</a></li>
+                                <li><a href="#">Static</a></li>
+                                <li><a href="#">My Friend</a></li>
+                                <li><a href="#">West</a></li>
+                                <li><a href="#">What Do I Really Know</a></li>
+                                <li><a href="#">Destination - Outro</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+            </div>
+            </div> 
+          </div> 
+        </div> 
+
+            <div class= "Singles">
+                <h1 style="text-align: center; padding:30px ;">Singles:</h1>
+            </div>
+        
+                
+            <div id="provider-container">
+                <div class="music-providers">
+                    <h1 style="text-align: center; padding:30px; padding-bottom: 100px; ">Providers:</h1>
+                    <ul id="provider-list">
+                        <li>
+                        <a class="retailer-link" href="http://itunes.apple.com/album/id1500246635?ls=1&app=itunes" title="iTunes">
+                            <div class="retailer-logo retailer_1"></div>
+                            <div class="retailer-verb">
+                                <span class="retailer-verb__text">Buy</span>
+                            </div>
+                        </a>
+                    </li>
+
+                            <li>
+                                <a class="retailer-link" href="http://itunes.apple.com/album/id/1500246635" title="Apple Music">
+                                    <div class="retailer-logo retailer_2"></div>
+                                    <div class="retailer-verb">
+                                        <span class="retailer-verb__text">Stream</span>
+                                    </div>
+                                </a>
+                            </li>
+                        
+                        
+                            <li>
+                                <a class="retailer-link" href="https://open.spotify.com/album/5ZqAnZeGU27iC5Ka8wkR02" title="Spotify">
+                                    <div class="retailer-logo retailer_3"></div>
+                                    <div class="retailer-verb">
+                                        <span class="retailer-verb__text">Stream</span>
+                                    </div>
+                                </a>
+                            </li>
+                        
+                        
+                            <li>
+                                <a class="retailer-link" href="https://play.google.com/music/r/m/B65lszumsujvlmy3yy2e5enk6fa?t=From_Moscow_to_Tehran_-_Partners_In_Crime" title="Google Play">
+                                    <div class="retailer-logo retailer_4"></div>
+                                    <div class="retailer-verb">
+                                        <span class="retailer-verb__text">Stream</span>
+                                    </div>
+                                </a>
+                            </li>
+                        
+                        
+                            <li>
+                                <a class="retailer-link" href="https://www.amazon.com/dp/B08543Z1KL" title="Amazon Music">
+                                    <div class="retailer-logo retailer_5"></div>
+                                    <div class="retailer-verb">
+                                        <span class="retailer-verb__text">Stream</span>
+                                    </div>
+                                </a>
+                            </li>
+                        
+                        
+                            <li>
+                                <a class="retailer-link" href="https://music.yandex.ru/album/10004467" title="Yandex">
+                                    <div class="retailer-logo retailer_6"></div>
+                                    <div class="retailer-verb">
+                                        <span class="retailer-verb__text">Stream</span>
+                                    </div>
+                                </a>
+                            </li>
+                        
+                        
+                            <li>
+                                <a class="retailer-link" href="https://music.youtube.com/playlist?list=OLAK5uy_lbdCq0whaAcQumPcvrNHOlFgmv-szRVXo"  title="Youtube Music">
+                                    <div class="retailer-logo retailer_7"></div>
+                                    <div class="retailer-verb">
+                                        <span class="retailer-verb__text">Stream</span>
+                                    </div>
+                                </a>
+                            </li>
+                        
+                    </ul>     
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--footer-->
+    <div class= "footer">
+        <div class="footer-content">
+          <div class="footer-section.about"></div>
+          <div class="footer-section.links"></div>
+          <div class="footer-section contact-form"></div>
+        </div>
+        <div class= "footer-bottom">
+          &copy; Raplatory.com | Designed by Arman Mojtabavi
+        </div>
+      </div>
+      <!--// footer -->
+
+
+</body>
+</html>
+

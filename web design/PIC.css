@@ -1,0 +1,418 @@
+html{overflow-x: hidden;
+scroll-behavior: smooth;}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: verdana ;
+}
+
+#transparent-header{
+  width:100%;
+  height: 80px;
+  resize: both;
+  text-transform: uppercase;
+  background:url('https://raw.github.com/peterwestendorp/shelves/master/images/white_wall.png') ;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: #0002;
+    opacity: 0.8;
+    line-height: 80px;
+    
+}
+
+nav ul {
+    float: left;
+    margin-left: 40px;
+
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.5s all;
+}
+
+nav ul li:hover{
+    background-color: lightseagreen;
+}
+
+nav ul li a {
+
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+}
+
+
+        
+#myBtn {
+  display: none;  
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(0, 204, 255);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  opacity: .5;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+.page-title{
+  position: relative;
+  padding: 50px;
+  text-align: center;
+}
+
+
+.About-container{
+  position: relative;
+  margin: auto;
+  background: #f4f5f4cc ;
+  border-radius: 100px;
+  max-width:1000px;
+  height: auto;
+}
+
+.About-section{
+
+  padding-top: 100px;
+  padding-bottom: 300px;
+  text-align: center;
+}  
+
+  
+  @media only screen and (max-device-width: 480px), screen and (max-width: 799px) {
+    .hidden-mobile {
+      display: none; }
+    .hidden-desktop {
+      display: inherit; } }
+  
+  html, body {
+    font-size: 14px;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  
+  body {
+    background-image: url("blurry background.jpg");
+    color: #373d47;
+    font-family: "museo-sans", "Lucida Grande", Helvetica, Arial, sans-serif;
+    margin: 0;
+    width: 100%; }
+    body.no-scroll {
+      overflow: hidden; }
+  
+
+
+.Albums{
+margin: auto;
+padding:20px;
+height: 800px;
+
+}
+
+.album-text{
+  margin: auto;
+text-align: center;
+ padding:30px; 
+}
+
+.Singles{
+float: right;
+margin: auto;
+padding: 20px;
+width: 500px;
+height: auto;
+position: relative;
+}
+
+
+      #title1.hasBothTitles:after {
+        content: ' - '; }
+      
+      .title-container {
+        color: rgb(20, 16, 16);
+        font-size: 26px;
+        font-weight: 500;
+        padding-bottom: 25px;
+        margin-bottom: 45px;
+        position: relative;
+        text-align: center;
+        }
+        .title-container.sponsors-wrap {
+          margin-bottom: 0;
+          margin-top: 0; }
+      
+      .title-container-img-wrap {
+        margin-bottom: 0;
+        padding-bottom: 5px; }
+      
+      .title-underline {
+        background-color:rgb(20, 16, 16);
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 4px;
+        left: calc(50% - 37px);
+        position: absolute;
+        width: 74px; }
+  
+  @media only screen and (max-device-width: 480px), screen and (max-width: 799px) {
+    .custom-footer {
+      width: 300px; } }
+
+  
+  /* mobile */
+  @media only screen and (max-device-width: 480px), screen and (max-width: 799px) {
+    .bg {
+      top: 0; } }
+   
+
+
+      .flip-card {
+        perspective: 1000px;}
+        .flip-card img {
+          width: 400px;
+          height: auto;
+          position: relative;
+        display: inline-block;
+      padding: 10px; }
+
+      
+      /* This container is needed to position the front and back side */
+      .flip-card-inner {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+      }
+      
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+        
+      }
+      
+      /* Position the front and back side */
+      .flip-card-front, .flip-card-back {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      
+/* Style the back side */
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+  
+.tracks {
+  position: absolute;
+  right: 2px;
+  bottom: -628px;
+  width: 100%;
+  height: auto;
+  display: inline-block;}
+
+
+#track-list li{
+  list-style-type: none;
+  padding: 8px;
+  background-image: url("traintracklist.jpg"); ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px 80px;
+}
+
+#track-list li:hover{
+  transform: scale(1.1);
+  transition: .1s;
+}
+
+#track-list li a {
+  text-decoration: none;
+  color: rgba(248, 248, 248, 0.829);
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#track-list li a:hover {
+  color:rgb(255, 72, 0);
+  transition: .1;
+  padding: 5px;
+}
+  
+  #provider-container {
+    position: relative;
+    float: left;
+    padding: 30px;
+    width: 320px;
+margin: auto;
+}
+    
+  
+  #provider-list {
+    margin: 0;
+    padding: 0;
+    }
+    #provider-list li {
+      display: block;
+      height: 83px;
+      margin: 0 0 2px 0;
+      position: relative;
+      padding: 0; }
+    #provider-list a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      color: #3a3e47; }
+      #provider-list a:hover {
+        text-decoration: none;
+        color: #00ff80;
+     }
+        #provider-list a:hover .retailer-logo,
+        #provider-list a:hover .retailer-verb {
+          background-color: #fff; }
+
+  
+  .retailer-logo,
+  .retailer-verb {
+    background-color: #f3f4f8; }
+    
+  
+  .retailer-verb {
+    float: right;
+    height: 100%;
+    position: relative;
+    width: 128px; }
+  
+  .retailer-logo {
+    float: left;
+    width: 190px;
+    height: 83px;
+    background-repeat: no-repeat;
+    z-index: -1;
+    position:relative;
+    background-position: 20% 80%; }
+
+
+    .retailer_1.retailer-logo {
+        background-image: url("itunesstore.png");
+        background-position: center;
+        background-size: 180px 40px;
+    }
+
+
+    .retailer_2.retailer-logo {
+        background-image: url("applemusic.png");
+        background-position: center;
+        background-size: 180px 40px;
+    }
+
+
+    .retailer_3.retailer-logo {
+        background-image: url("spotify-logo.png");
+        background-position: center;
+        background-size: 150px 150px;
+    }
+    .retailer_4.retailer-logo {
+        background-image: url("googleplay.png");
+        background-position: center;
+        background-size: 180px 40px;
+    }
+    .retailer_5.retailer-logo {
+        background-image: url("amazonmusic.png");
+        background-position: center;
+        background-size: 170px 45px;
+    }
+    .retailer_6.retailer-logo {
+        background-image: url("yandex.png");
+        background-position: center;
+        background-size: 140px 50px;
+    }
+
+    .retailer_7.retailer-logo {
+        background-image: url("YouTubeMusic.png");
+        background-position: center;
+        background-size: 170px 60px;
+    }
+    
+  .retailer-verb__text {
+    left: 50%;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 90%; }
+  
+
+  .lyrics-container{
+    position: relative;
+    top: 100px;
+    margin: 0;
+    width:100%;
+    min-height: 300px;
+  }
+
+    
+ /* FOOTER */
+ .footer {
+  color: #d3d3d3;
+  position: relative ;
+  width:100%;
+  height:60px;   /* Height of the footer */
+  top: 1500px;
+
+}
+
+.footer .footer-bottom {
+background:url("footer-background.png");
+color: #686868;
+height: 30px;
+width: 100%;
+text-align: center;
+bottom: 0px;
+left: 0px;
+position: absolute; 
+padding: 10px 10px 0px 10px; 
+}
