@@ -6,6 +6,7 @@ body {
   padding: 0px;
   overflow-x: hidden; 
   box-sizing: border-box;
+  
 }
 body {
   font-size:15px; 
@@ -15,7 +16,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: verdana ;
-  box-sizing: border-box;
 } 
 
 
@@ -193,15 +193,14 @@ body.view-bottom-shelf .roll-camera .move-camera {
   transform-style:  preserve-3d;
   backface-visibility:  hidden;
   transform: rotateY(90deg) rotateX(90deg) translateX(199px);
-  width: auto;
   height: auto;
   max-width: 100%;
-  max-height:100% ;
 }
 
 .shelf.top {
   top: 350px;
   margin-top: -100px;
+
 }
 .shelf.middle {
   top: 550px;
@@ -218,12 +217,15 @@ body.view-bottom-shelf .roll-camera .move-camera {
   background: url("metal-background.jpg");
 
   box-shadow: inset 0 0 75px 1.5px rgba(0, 0, 0, .1);
+
 }
 .shelf .front {
   width: 100px;
   height: 1050px;
   transform-style: preserve-3d;
   transform: translateX(35px) translateY(-350px) translateZ(10px);
+  max-width: 100%;
+  
 }
 .shelf .back {
   width: 100px;
@@ -240,6 +242,7 @@ body.view-bottom-shelf .roll-camera .move-camera {
   width: 20px;
   height: 100px;
   transform: translateX(75px) translateY(650px) rotateX(90deg) rotateZ(90deg);
+  
 }
 .shelf .bottom {
   width: 20px;
@@ -259,13 +262,15 @@ body.view-bottom-shelf .roll-camera .move-camera {
               translateX(-20px)
               translateZ(-200px)
               skew(-45deg);
+
+
 }
 .shelf .back:before {
   content:"";
-  position: absolute;
+  position: relative;
   display:block;
-  width: 100%;
-  height:100%;
+
+
 }
 .shelf .top:before,
 .shelf .bottom:before,
@@ -291,6 +296,7 @@ body.view-bottom-shelf .roll-camera .move-camera {
                     rotateY(270deg)
                     translateY(-50px)
                     translateZ(25px);
+                    
 }
 .artist-image:after {
   content:"";
@@ -307,6 +313,7 @@ body.view-bottom-shelf .roll-camera .move-camera {
               translateY(-5px)
               skew(-45deg);
   
+              
   /* don't apply box-shadow to FF (render bug) */
   -moz-transform: scale(0);
 }
